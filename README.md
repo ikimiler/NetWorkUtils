@@ -15,10 +15,10 @@
 
 	//get方式请求
 	private void doGet() {
-	String url = "http://127.0.0.1:8080/test/test";
-	RequestParams params = new RequestParams.Builder().url(url).method(Method.GET).params("key1", "hello").params("key2", 	"doGet").tag(this).build();
-	NetWorkUtils.getInstance().doStart(params, callback);
-    	}
+		String url = "http://127.0.0.1:8080/test/test";
+		RequestParams params = new RequestParams.Builder().url(url).method(Method.GET).params("key1", "hello").params("key2", 	"doGet").tag(this).build();
+		NetWorkUtils.getInstance().doStart(params, callback);
+    }
 
 	//post方式请求
    	private void doPost() {
@@ -27,7 +27,7 @@
 		NetWorkUtils.getInstance().doStart(params, callback);
    	}
 
-	//postJson方式请求
+		//postJson方式请求
 	    	private void doPostJson() {
 		String url = "http://127.0.0.1:8080/test/test";
 		String body = "{ \"key1\":\"hello\",\"key2\":\"doPostJson\" }";
