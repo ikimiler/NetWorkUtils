@@ -82,8 +82,7 @@
 
 		@Override
 		public void onSuccess(Object tag, String result) {
-
-				Log.d(NetWorkUtils.class.getSimpleName(), "result = "+result);
+		    Log.d(NetWorkUtils.class.getSimpleName(), "result = "+result);
 		    /**
 		     * 可以根据不同的tag来解析数据
 		     * if(tag.equest("doGet")){
