@@ -29,8 +29,7 @@
 		String url = "http://127.0.0.1:8080/test/test";
 		RequestParams params = new RequestParams.Builder().url(url).method(Method.GET).params("key1", "hello").params("key2", 	"doGet").tag(this).build();
 		NetWorkUtils.getInstance().doStart(params, callback);
-    }
-
+    	}
 	//post方式请求
 	   	private void doPost() {
 		String url = "http://127.0.0.1:8080/test/test";
@@ -55,7 +54,7 @@
    	}
 
 	//文件下载
-    	private void doDownload() {
+    private void doDownload() {
 		String url = "http://127.0.0.1:8080/test/download";
 		String filePath = Environment.getExternalStorageDirectory().getPath() + File.separator + "atlas-master.zip";
 		RequestParams params = new RequestParams.Builder().url(url).method(Method.DOWNLOAD).downLoadFilePath(filePath).tag(this).build();
