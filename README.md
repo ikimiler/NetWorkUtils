@@ -1,6 +1,6 @@
 ### 演示
 
-![https://github.com/andmizi/NetWorkUtils/master/picture/NetWorkUtils.gif](https://github.com/andmizi/NetWorkUtils/master/picture/NetWorkUtils.gif)
+![https://github.com/andmizi/NetWorkUtils/blob/master/picture/NetWorkUtils.gif](https://github.com/andmizi/NetWorkUtils/blob/master/picture/NetWorkUtils.gif)
 
 ### 描述
 
