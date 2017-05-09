@@ -1,8 +1,8 @@
-# 描述
+### 描述
 * 网络请求库的二次封装，支持扩展，底层实现可自由切换，默认实现了OkHttpExecutorFactory，支持get/post/postJson/uploadFile/downloadFile等常用功能；
 * 扩展请继承ExecutorFactory实现具体的IExecutor即可，底层可以是OkHttp，也可以是HttpClient或者URLConnection；
 
-# 使用方式：
+### 使用方式：
 	public class MyApplication extends Application {
 	
 	    @Override
@@ -15,9 +15,9 @@
 
 	//get方式请求
 	private void doGet() {
-		String url = "http://127.0.0.1:8080/test/test";
-		RequestParams params = new RequestParams.Builder().url(url).method(Method.GET).params("key1", "hello").params("key2", 	"doGet").tag(this).build();
-		NetWorkUtils.getInstance().doStart(params, callback);
+	String url = "http://127.0.0.1:8080/test/test";
+	RequestParams params = new RequestParams.Builder().url(url).method(Method.GET).params("key1", "hello").params("key2", 	"doGet").tag(this).build();
+	NetWorkUtils.getInstance().doStart(params, callback);
     	}
 
 	//post方式请求
