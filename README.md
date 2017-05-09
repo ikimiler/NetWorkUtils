@@ -31,7 +31,7 @@
 		NetWorkUtils.getInstance().doStart(params, callback);
     	}
 	//post方式请求
-	   	private void doPost() {
+	private void doPost() {
 		String url = "http://127.0.0.1:8080/test/test";
 		RequestParams params = new RequestParams.Builder().url(url).method(Method.POST).params("key1", "hello").params("key2", "doPost").tag(this).build();
 		NetWorkUtils.getInstance().doStart(params, callback);
@@ -59,7 +59,7 @@
 		String filePath = Environment.getExternalStorageDirectory().getPath() + File.separator + "atlas-master.zip";
 		RequestParams params = new RequestParams.Builder().url(url).method(Method.DOWNLOAD).downLoadFilePath(filePath).tag(this).build();
 		NetWorkUtils.getInstance().doStart(params, callback);
-    	}
+    }
 
 	//请求回调，主线程中进行
  	private ICallBack callback = new ICallBack() {
