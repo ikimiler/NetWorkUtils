@@ -32,7 +32,7 @@
     }
 
 	//post方式请求
-   	private void doPost() {
+	   	private void doPost() {
 		String url = "http://127.0.0.1:8080/test/test";
 		RequestParams params = new RequestParams.Builder().url(url).method(Method.POST).params("key1", "hello").params("key2", "doPost").tag(this).build();
 		NetWorkUtils.getInstance().doStart(params, callback);
@@ -49,7 +49,7 @@
 	//文件上传
     private void doUploadFile() {
 
-String url = "http://127.0.0.1:8080/test/upload";
+	String url = "http://127.0.0.1:8080/test/upload";
 		String filePath = Environment.getExternalStorageDirectory().getPath() + File.separator + "atlas-master.zip";
 		RequestParams params = new RequestParams.Builder().url(url).method(Method.UPLOAD).files("fileKey", new File(filePath)).tag(this).build();
 		NetWorkUtils.getInstance().doStart(params, callback);
