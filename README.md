@@ -1,6 +1,6 @@
 ### 演示
 
-![NetWorkUtils.gif](http://upload-images.jianshu.io/upload_images/2756952-3d0857d4a44739d4.gif?imageMogr2/auto-orient/strip)
+![http://upload-images.jianshu.io/upload_images/2756952-3d0857d4a44739d4.gif](http://upload-images.jianshu.io/upload_images/2756952-3d0857d4a44739d4.gif)
 
 ### 描述
 
