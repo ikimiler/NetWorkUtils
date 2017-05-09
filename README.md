@@ -4,6 +4,10 @@
 
 * 扩展请继承ExecutorFactory实现具体的IExecutor即可，底层可以是OkHttp，也可以是HttpClient或者URLConnection；
 
+### 背景
+
+##### 网络请求在app开发中占据很重要的角色，也算是核心技术要点之一。github上也有很多著名的开源库，如Xutils，AsyncHttpClient，Okhttp等等。我相信很多人如同我一样，习惯性的拿这些开源的加入到自己的项目中，但当有一天，因为某些原因我们需要对网络层进行一次切换，那么是不是问题就变的严重了，我们需要改大量的代码来满足这次更改。为了避免这样的问题发生，我们需要对网络层进行二次包装一下；
+
 ### 使用方式：
 
 	public class MyApplication extends Application {
@@ -99,4 +103,5 @@
 		NetWorkUtils.getInstance().cancleRequest(this);
 		super.onDestroy();
     }
+
 
