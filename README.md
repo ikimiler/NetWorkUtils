@@ -1,6 +1,6 @@
 ### 演示
 
-![http://upload-images.jianshu.io/upload_images/2756952-3d0857d4a44739d4.gif](http://upload-images.jianshu.io/upload_images/2756952-3d0857d4a44739d4.gif)
+![https://github.com/andmizi/NetWorkUtils/master/picture/NetWorkUtils.gif](https://github.com/andmizi/NetWorkUtils/master/picture/NetWorkUtils.gif)
 
 ### 描述
 
