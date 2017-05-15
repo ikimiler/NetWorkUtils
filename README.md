@@ -54,8 +54,8 @@
    	}
 
 	//文件下载
-    private void doDownload() {
-		String url = "http://127.0.0.1:8080/test/download";
+    private void doDownload() {		
+    		String url = "http://127.0.0.1:8080/test/download";
 		String filePath = Environment.getExternalStorageDirectory().getPath() + File.separator + "atlas-master.zip";
 		RequestParams params = new RequestParams.Builder().url(url).method(Method.DOWNLOAD).downLoadFilePath(filePath).tag(this).build();
 		NetWorkUtils.getInstance().doStart(params, callback);
@@ -106,9 +106,9 @@
 		super.onDestroy();
     }
 
-### 使用方式：
+### 引入方式：
 
-* jcenter正在发布中，后续可以直接compile 'com.itkimi.group:NetworkUtils:1.0.0' 引入
+* compile 'com.itkimi.group:NetworkUtils:1.0.0' 
 
 
 ### CSDN 博客：[http://blog.csdn.net/qq_28268507/article/details/71452729](http://blog.csdn.net/qq_28268507/article/details/71452729)
